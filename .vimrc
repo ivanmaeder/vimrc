@@ -10,6 +10,7 @@ set expandtab
 set shiftwidth=4
 set tabstop=4
 set foldmethod=marker
+set nojoinspaces
 
 set si "smart indent
 set ic "ignore case
