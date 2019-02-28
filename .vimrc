@@ -13,7 +13,7 @@ set foldmethod=marker
 set nojoinspaces
 set number
 
-set si "smart indent
+set cindent
 set ic "ignore case
 
 " allow backspacing over everything in insert mode
