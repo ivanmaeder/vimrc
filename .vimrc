@@ -2,9 +2,13 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+" Trying this out because https://webpack.js.org/guides/development/#adjusting-your-text-editor
+set backupcopy=yes
+
+" Commented because MacVim was crashing (https://github.com/macvim-dev/macvim/issues/1158)
 " The following plus `set nocompatible` needed for matchit
-filetype plugin on
-runtime macros/matchit.vim
+"filetype plugin on
+"runtime macros/matchit.vim
 
 set expandtab
 set shiftwidth=4
@@ -13,8 +17,9 @@ set foldmethod=marker
 set nojoinspaces
 set number
 
+autocmd FileType yaml setlocal ts=2 sw=2
+
 set si "smart indent
-"set cindent
 set ic "ignore case
 
 " allow backspacing over everything in insert mode
